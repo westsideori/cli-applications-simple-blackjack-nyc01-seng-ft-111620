@@ -32,8 +32,8 @@ def initial_round
   display_card_total(card_hand)
 end
 
-def hit?(num)
-  card_total = num
+def hit?(total)
+  card_total = total
   prompt_user
   user_input = get_user_input
   while user_input != 'h' && user_input != 's' do
